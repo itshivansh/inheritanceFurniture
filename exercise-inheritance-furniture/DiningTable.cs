@@ -6,7 +6,7 @@ using System.Text;
 
 namespace exercise_inheritance_furniture
 {
-   public class DinigTable:Furniture
+   public class DiningTable:Furniture
     {
         public int NoOfLegs { get; set; }
         public override void Accept()

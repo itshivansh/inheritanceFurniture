@@ -23,7 +23,7 @@ namespace exercise_inheritance_furniture
                 switch (choice)
                 {
                     case 1:
-                        items[i] = new DinigTable();  //f[0]
+                        items[i] = new DiningTable();  //f[0]
                         items[i].Accept();                 
                         break;
                     case 2:
