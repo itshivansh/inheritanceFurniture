@@ -34,7 +34,7 @@ The program should also contain definitions for  class types as suggested below:
          - Should declare Accept and Display function to Read Additional Property
 
 --------------------------------------------------------
- + DiningTable : class
+      + DiningTable : class
          - Child class of Furniture with additional NoOfLegs Property
          - Should declare Accept and Display function to Read Additional Property
 

@@ -6,21 +6,14 @@ using System.Text;
 
 namespace exercise_inheritance_furniture
 {
-    public class BookShelf:Furniture
+    //child of Furniture
+    public class BookShelf
     {
-        public int NoOfShelves { get; set; }
-        public override void Accept()
-        {
-            base.Accept();
-            Console.Write("No of shelves");
-            NoOfShelves = Convert.ToInt32(Console.ReadLine());
-        }
-        public override void Display()
-        {
-            base.Display();
-            Console.Write("No of shelves");
-            Console.WriteLine("No of Shelves{0}", NoOfShelves);
-        }
+        //Add  NoOfShelves  property
+        //overrride the Accept method to read NoOfLegs property also
+        //
+        //override the Display method to include the display of NoOfLegs property also
+         
     }
 }
 

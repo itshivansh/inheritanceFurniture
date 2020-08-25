@@ -6,21 +6,13 @@ using System.Text;
 
 namespace exercise_inheritance_furniture
 {
-   public class DiningTable:Furniture
+    //child of furniture
+   public class DiningTable
     {
-        public int NoOfLegs { get; set; }
-        public override void Accept()
-        {
-            base.Accept();
-            Console.Write("No of Legs");
-            NoOfLegs = Convert.ToInt32(Console.ReadLine());
-        }
-        public override void Display()
-        {
-            base.Display();
-            Console.Write("No of Legs");
-            Console.WriteLine("No of Legs:{0}", NoOfLegs);
-        }
+        //Add  NoOfLegs  property
+        //overrride the Accept method to read NoOfLegs property also
+        //
+        //override the Display method to include the display of NoOfLegs property also
     }
 }
 

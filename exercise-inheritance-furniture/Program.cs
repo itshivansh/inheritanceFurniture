@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Dynamic;
 
 namespace exercise_inheritance_furniture
 {
@@ -6,55 +7,32 @@ namespace exercise_inheritance_furniture
     {
         static void Main(string[] args)
         {
-            Furniture[] f = new Furniture[2];
-            Program p = new Program();
-            p.AddToStock(f);
-            p.ShowStockDetails(f);
-           Console.WriteLine("Total Stock Value:  "+ p.TotalStockValue(f));
+            //create an array  of objects in furniture type
+            //create program class object
+            // call AddToStock(<furniture array>);
+            //call ShowStockDetails(<furniture array>);
+            // call TotalStockValue(<furniture array>) and display output 
+             
             
         }
        public int AddToStock(Furniture []items) {
-            int choice ;
-            int i = 0;
-            do
-            {
-                Console.WriteLine("Enter your choice 1-DiningTable,2-BookShelf");
-                choice = Convert.ToInt32(Console.ReadLine());
-                switch (choice)
-                {
-                    case 1:
-                        items[i] = new DiningTable();  //f[0]
-                        items[i].Accept();                 
-                        break;
-                    case 2:
-                        items[i] = new BookShelf(); //f[1]                                           
-                        items[i].Accept();  //
-                        break;
-                    default:
-                        Console.WriteLine("Wrong choice");
-                        break;
-                }
-                i++;
 
-            } while (i < items.Length);
-            return i;
+            //accept the choice from user for type of furniture(BookShelf  or DiningTable)
+            // and according to the choice create necessary sub class object and store data
+            //continue the process up to the size of array
+             
+           // return <size of array>;
         }
      public   double TotalStockValue(Furniture []items)
         {
             double stockValue=default;
-            foreach(Furniture f in items)
-            {
-                stockValue +=   f.Price * f.Qty;
-            }
+            //calculate total stock value i.e qty * price of each item
             return stockValue;
         }
     public    int ShowStockDetails(Furniture[] items)
         {
-            foreach (Furniture f in items)
-            {
-                f.Display();
-            }
-           return items.Length;
+            //call display method from all object to display the stock 
+           //return <size of array>;
         }
     }
 }
